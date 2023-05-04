@@ -1,0 +1,77 @@
+@media (min-width: 1200px) {
+	main {
+		display: grid;
+		grid-template-columns: 30%, 70%;
+		align-items: center;
+
+		.card {
+			grid-column: 1/2;
+			align-items: center;
+			width: 493px;
+			height: 100vh;
+			background-image: url('../images/bg-main-desktop.png');
+			background-size: cover;
+
+			&__wrapper {
+                margin-left: 164px;
+				width: 541px;
+				height: 527px;
+			}
+
+			&__back,
+			&__front {
+				width: 447px;
+				height: 245px;
+			}
+
+			&__back {
+				top: 55% ;
+				left: 40%;
+			}
+
+            &__cvc {
+                right: 50px;
+                top: 111px;
+                font-size: 14px;
+            }
+
+            &__front {
+                padding: 32px;
+                top: 0;
+                left: 0;
+            }
+
+            &__logo {
+                width: 84px;
+                height: 47px;
+            }
+
+            &__number{
+                margin-top: 50px;
+                font-size: 28px;
+                letter-spacing: 3.42px;
+            }
+
+            &__info {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+		}
+
+		.form, .completed {
+			grid-column: 2/3;
+            width: 380px;
+
+		}
+	}
+
+	.attribution {
+		position: absolute;
+		bottom: 10px;
+		left: 20px;
+
+		a {
+			color: $lightgrayishviolet;
+		}
+	}
+}

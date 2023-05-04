@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Interactive card details form</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<main>
+			<section class="card">
+				<div class="card__wrapper">
+					<div class="card__back">
+						<p class="card__cvc">000</p>
+					</div>
+					<div class="card__front">
+						<img
+							src="./images/card-logo.svg"
+							alt="Card logo"
+							class="card__logo"
+						/>
+						<p class="card__number">0000 0000 0000 0000</p>
+						<div class="card__info">
+							<p class="card__owner">Jane Appleseed</p>
+							<div class="card__expiry-date">
+								<p class="card__expiry-month">00</p>
+								/
+								<p class="card__expiry-year">00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="form">
+				<div class="form__box cardholder">
+					<label for="cardholder">Cardholder Name</label>
+					<input
+						type="text"
+						placeholder="e.g. Jane Appleseed"
+						id="cardholder"
+					/>
+					<p class="error-text"></p>
+				</div>
+
+				<div class="form__box cardnumber">
+					<label for="cardnumber">Card Number</label>
+					<input
+						type="text"
+						placeholder="e.g. 1234 5678 9123 0000"
+						id="card-number"
+						maxlength="16"
+					/>
+					<p class="error-text"></p>
+				</div>
+
+				<div class="form__box expiry">
+					<label for="expiry">Exp. Date (MM/YY)</label>
+					<input type="text" placeholder="MM" id="expiry-month" maxlength="2" />
+					<input type="text" placeholder="YY" id="expiry-year" maxlength="2" />
+					<p class="error-text"></p>
+				</div>
+
+				<div class="form__box cvc">
+					<label for="cvc-number">CVC</label>
+					<input
+						type="text"
+						placeholder="e.g. 123"
+						id="cvc-number"
+						maxlength="3"
+					/>
+					<p class="error-text"></p>
+				</div>
+
+				<button class="form__send">Confirm</button>
+			</section>
+
+			<section class="completed hidden">
+				<img src="./images/icon-complete.svg" alt="" />
+				<h2 class="completed__title">Thank you!</h2>
+				<p class="completed__description">We've added your card details</p>
+				<button class="completed__btn">Continue</button>
+			</section>
+		</main>
+
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://github.com/Bartol857">Bartol857</a>.
+		</footer>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
